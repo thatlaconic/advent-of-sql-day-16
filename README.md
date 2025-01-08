@@ -35,6 +35,7 @@ FROM areas ;
 
 ### Solution
 [Download Solution Code](https://github.com/thatlaconic/advent-of-sql-day-16/blob/main/sleigh_loc16.PNG)
+
 **input**
 ```sql
 WITH CTE AS (SELECT place_name, MAX(timestamp) OVER(PARTITION BY place_name) AS max_time,
